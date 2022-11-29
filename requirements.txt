@@ -5,5 +5,4 @@ numpy
 osmnx
 folium 
 matplotlib
-opencage.geocoder
 pprint
