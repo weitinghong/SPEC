@@ -11,9 +11,6 @@ import geopandas as gpd
 # In[5]:
 
 
-get_ipython().system('pip install pygeos')
-
-
 # In[7]:
 
 
@@ -72,9 +69,6 @@ gdf_parcel.rename(columns={'geometry_p':'geometry'}, inplace=True)
 
 
 # In[46]:
-
-
-get_ipython().system('pip install streamlit')
 
 
 # In[47]:
