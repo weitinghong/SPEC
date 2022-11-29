@@ -24,7 +24,7 @@ gdf_parcel = gpd.read_file('spec_score.shp')
 # In[50]:
 
 
-land_gdf = gpd.read_file("geo_export_819fa206-9911-4add-a04b-60026b6bc489.shp")
+land_gdf = gpd.read_file("base_land.shp")
 
 
 # In[71]:
