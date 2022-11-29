@@ -1,4 +1,4 @@
-streamlit==1.1.0
+streamlit==1.11.1
 plotly==5.1.0
 pandas
 numpy
@@ -8,5 +8,6 @@ matplotlib
 matplotlib
 opencage.geocoder
 pprint
+
 
 
