@@ -4,3 +4,9 @@ pandas
 numpy
 osmnx
 folium 
+matplotlib
+matplotlib
+opencage.geocoder
+pprint
+
+
