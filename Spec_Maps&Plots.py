@@ -27,9 +27,6 @@ gdf_isochrone
 # In[19]:
 
 
-gdf.crs
-
-
 # In[21]:
 
 
