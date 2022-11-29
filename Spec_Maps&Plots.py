@@ -20,7 +20,7 @@ gpd.options.use_pygeos=True
 # In[20]:
 
 
-gdf_isochrone = gpd.read_file('/Users/mariedemple/Downloads/spec_score.shp')
+gdf_isochrone = gpd.read_file('spec_score.shp')
 gdf_isochrone
 
 
@@ -33,7 +33,7 @@ gdf.crs
 # In[21]:
 
 
-gdf_parcel = gpd.read_file('/Users/mariedemple/Downloads/spec_score.shp')
+gdf_parcel = gpd.read_file('spec_score.shp')
 gdf_parcel
 
 
