@@ -5,3 +5,4 @@ numpy
 osmnx
 folium 
 matplotlib
+opencage
