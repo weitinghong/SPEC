@@ -66,7 +66,7 @@ import streamlit as st
 # In[66]:
 
 
-gdf_parcel.plot()
+st.gdf_parcel.plot()
 
 
 # In[56]:
