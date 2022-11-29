@@ -66,7 +66,7 @@ import streamlit as st
 # In[66]:
 
 
-st.gdf_parcel.plot()
+#st.gdf_parcel.plot()
 
 
 # In[56]:
@@ -84,7 +84,7 @@ gdf_parcel.plot('zoning_cod', ax=ax, legend=True)
 land_gdf.plot(ax=ax, alpha=0.1)
 plt.show()
 
-
+st.pyplot(fig)
 
 
 
