@@ -11,8 +11,6 @@ import os
 import streamlit as st
 from matplotlib import pyplot as plt
 
-from opencage.geocoder import OpenCageGeocode
-from pprint import pprint
 import osmnx as ox
 import folium
 
