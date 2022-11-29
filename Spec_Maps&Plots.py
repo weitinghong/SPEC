@@ -71,13 +71,11 @@ gdf_parcel.rename(columns={'geometry_p':'geometry'}, inplace=True)
 # In[47]:
 
 
-import streamlit as st
-
 
 # In[44]:
 
 
-st.gdf_parcel.plot()
+gdf_parcel.plot()
 
 
 # In[43]:
