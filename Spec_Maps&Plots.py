@@ -8,88 +8,84 @@ import pandas as pd
 import geopandas as gpd
 
 
-# In[5]:
+# In[58]:
 
 
-# In[7]:
+gdf_isochrone = gpd.read_file('spec_score.shp')#('/Users/mariedemple/Downloads/spec_score.shp')
 
 
-gpd.options.use_pygeos=True
+# In[59]:
 
 
-# In[20]:
+gdf_parcel = gpd.read_file('/Users/mariedemple/Downloads/spec_score.shp')
 
 
-gdf_isochrone = gpd.read_file('spec_score.shp')
-gdf_isochrone
+# In[50]:
 
 
-# In[19]:
+land_gdf = gpd.read_file("/Users/mariedemple/Downloads/Land Database 2016/geo_export_819fa206-9911-4add-a04b-60026b6bc489.shp")
 
 
-# In[21]:
-
-
-gdf_parcel = gpd.read_file('spec_score.shp')
-gdf_parcel
-
-
-# In[23]:
+# In[71]:
 
 
 geometry = gpd.points_from_xy(gdf_parcel.x, gdf_parcel.y, crs="EPSG:4326")
-geometry
 
 
-# In[25]:
+# In[61]:
 
 
 gdf_parcel['geometry_p'] = geometry
 
 
-# In[26]:
-
-
-gdf_parcel.info()
-
-
-# In[34]:
+# In[62]:
 
 
 gdf_parcel.drop(columns=['geometry'], inplace=True)
 
 
-# In[42]:
+# In[63]:
 
 
 gdf_parcel.rename(columns={'geometry_p':'geometry'}, inplace=True)
 
 
-# In[46]:
+# In[ ]:
 
 
-# In[47]:
+#!pip install streamlit
 
 
+# In[65]:
 
-# In[44]:
 
 import streamlit as st
 
-st.plot(gdf_parcel)
+
+# In[66]:
 
 
-# In[43]:
+gdf_parcel.plot()
 
 
-gdf_parcel.info()
+# In[56]:
+
+
+import matplotlib.pyplot as plt
+from mpl_toolkits.axes_grid1 import make_axes_locatable
+
+
+# In[57]:
+
+
+fig, ax = plt.subplots(1, figsize=(15,15))
+gdf_parcel.plot('zoning_cod', ax=ax, legend=True)
+land_gdf.plot(ax=ax, alpha=0.1)
+plt.show()
 
 
 # In[ ]:
 
 
-#f, ax = plt.subplots(1, figsize=(15,15))
-#gdf_parcel.plot('basezone', ax=ax, legend=True)
-#land_gdf.plot(ax=ax, alpha=0.1)
-#plt.show()
+
 
