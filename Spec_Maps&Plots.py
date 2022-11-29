@@ -76,7 +76,7 @@ gdf_parcel.rename(columns={'geometry_p':'geometry'}, inplace=True)
 
 import streamlit as st
 
-gdf_parcel.st.plot()
+st.plot(gdf_parcel)
 
 
 # In[43]:
