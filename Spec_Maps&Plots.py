@@ -100,6 +100,7 @@ iso_df.plot('zoning_cod', ax=ax, legend=True)
 land_gdf.plot(ax=ax, alpha=0.1)
 plt.title('100 top parcels by zoning code')
 plt.show()
+st.pyplot(fig)
 
 
 # In[84]:
@@ -111,7 +112,7 @@ mylabels = ["Limited Industrial Services", "Transit-Oriented Development", "Indu
 plt.pie(y, labels = mylabels, radius = 2, autopct='%1.1f%%')
 plt.title('Zoning Code Distribution For Top 100 parcels', pad = 110)
 plt.show()
-
+st.pyplot.show()
 
 # In[88]:
 
@@ -140,7 +141,7 @@ iso_5_df.plot('owner', legend=True, ax=ax)
 top_5_isochrones.plot(ax=ax, alpha=0.1)
 land_gdf.plot(ax=ax, alpha=0.2)
 plt.title('Owner and service area for top 5 scoring parcels')
-plt.show()
+st.pyplot(fig)
 
 
 # In[74]:
