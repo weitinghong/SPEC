@@ -11,19 +11,19 @@ import geopandas as gpd
 # In[58]:
 
 
-gdf_isochrone = gpd.read_file('spec_score.shp')#('/Users/mariedemple/Downloads/spec_score.shp')
+gdf_isochrone = gpd.read_file('spec_score.shp')#('spec_score.shp')
 
 
 # In[59]:
 
 
-gdf_parcel = gpd.read_file('/Users/mariedemple/Downloads/spec_score.shp')
+gdf_parcel = gpd.read_file('spec_score.shp')
 
 
 # In[50]:
 
 
-land_gdf = gpd.read_file("/Users/mariedemple/Downloads/Land Database 2016/geo_export_819fa206-9911-4add-a04b-60026b6bc489.shp")
+land_gdf = gpd.read_file("base_land.shp")
 
 
 # In[71]:
