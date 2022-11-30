@@ -109,10 +109,11 @@ st.pyplot(fig)
 import numpy as np
 y = np.array([60, 22, 14, 3, 1])
 mylabels = ["Limited Industrial Services", "Transit-Oriented Development", "Industrial Park", "Commercial Highway", "Major Industry"]
-plt.pie(y, labels = mylabels, radius = 2, autopct='%1.1f%%')
-plt.title('Zoning Code Distribution For Top 100 parcels', pad = 110)
-plt.show()
-st.pyplot.show()
+fig,ax = plt.subplots()
+ax.pie(y, labels = mylabels, radius = 2, autopct='%1.1f%%')
+ax.title('Zoning Code Distribution For Top 100 parcels', pad = 110)
+#plt.show()
+st.pyplot(fig)
 
 # In[88]:
 
