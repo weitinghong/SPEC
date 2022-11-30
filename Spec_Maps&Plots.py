@@ -111,7 +111,7 @@ y = np.array([60, 22, 14, 3, 1])
 mylabels = ["Limited Industrial Services", "Transit-Oriented Development", "Industrial Park", "Commercial Highway", "Major Industry"]
 fig,ax = plt.subplots()
 ax.pie(y, labels = mylabels, radius = 2, autopct='%1.1f%%')
-st.title('Zoning Code Distribution For Top 100 parcels', pad = 110)
+plt.title('Zoning Code Distribution For Top 100 parcels', pad = 110)
 #plt.show()
 st.pyplot(fig)
 
@@ -141,7 +141,7 @@ fig, ax = plt.subplots(1, figsize=(15,15))
 iso_5_df.plot('owner', legend=True, ax=ax)
 top_5_isochrones.plot(ax=ax, alpha=0.1)
 land_gdf.plot(ax=ax, alpha=0.2)
-st.title('Owner and service area for top 5 scoring parcels')
+plt.title('Owner and service area for top 5 scoring parcels')
 st.pyplot(fig)
 
 
