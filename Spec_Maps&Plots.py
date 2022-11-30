@@ -5,7 +5,7 @@ import geopandas as gpd
 
 st.title('Robotrucks Depot Site Selection')
 st.caption("Spec Project Fall 2022")
-st.caption("Marie Demple  Avichal Gupta  William Hong")
+st.caption("Marie Demple, Avichal Gupta, William Hong")
 
 
 gdf_isochrone = gpd.read_file('spec_score.shp')#('spec_score.shp')
